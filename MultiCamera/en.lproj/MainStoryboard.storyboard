@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UQ4-r1-yoK"/>
+                        <viewControllerLayoutGuide type="bottom" id="7HL-zw-Ard"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e7l-qb-aqI" userLabel="Rear Camera View">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="436"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Szg-dB-cao">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="436"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Szg-dB-cao" firstAttribute="leading" secondItem="e7l-qb-aqI" secondAttribute="leading" id="ZIg-3s-aRW"/>
+                                    <constraint firstItem="Szg-dB-cao" firstAttribute="top" secondItem="e7l-qb-aqI" secondAttribute="top" id="ihs-BR-Ibb"/>
+                                    <constraint firstItem="Szg-dB-cao" firstAttribute="bottom" secondItem="e7l-qb-aqI" secondAttribute="bottom" id="tJx-Gy-CKJ"/>
+                                    <constraint firstItem="Szg-dB-cao" firstAttribute="trailing" secondItem="e7l-qb-aqI" secondAttribute="trailing" id="tsP-dy-Rhe"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fwh-sa-3fv" userLabel="Front Camera View">
+                                <rect key="frame" x="160" y="176" width="160" height="260"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cgx-j3-lad">
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="260"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="cgx-j3-lad" firstAttribute="leading" secondItem="Fwh-sa-3fv" secondAttribute="leading" id="Pgi-KG-ku2"/>
+                                    <constraint firstItem="cgx-j3-lad" firstAttribute="trailing" secondItem="Fwh-sa-3fv" secondAttribute="trailing" id="WP7-f2-F57"/>
+                                    <constraint firstItem="cgx-j3-lad" firstAttribute="top" secondItem="Fwh-sa-3fv" secondAttribute="top" id="r2u-aP-u1y"/>
+                                    <constraint firstItem="cgx-j3-lad" firstAttribute="bottom" secondItem="Fwh-sa-3fv" secondAttribute="bottom" id="uSC-DY-fnA"/>
+                                </constraints>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4yL-tS-Iz2">
+                                <rect key="frame" x="0.0" y="436" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="compose" id="6Jx-oO-nf9">
+                                        <connections>
+                                            <action selector="showPhotoLibrary:" destination="2" id="uIA-M0-OZg"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="7rY-0b-Dne"/>
+                                    <barButtonItem systemItem="camera" id="M7A-42-Ch9">
+                                        <connections>
+                                            <action selector="takePhotograph:" destination="2" id="FIq-Yd-Pnj"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Fwh-sa-3fv" firstAttribute="bottom" secondItem="e7l-qb-aqI" secondAttribute="bottom" id="32Z-zv-nfG"/>
+                            <constraint firstItem="4yL-tS-Iz2" firstAttribute="top" secondItem="e7l-qb-aqI" secondAttribute="bottom" id="7Z2-jN-vd6"/>
+                            <constraint firstItem="e7l-qb-aqI" firstAttribute="top" secondItem="3" secondAttribute="top" id="7aO-8J-fMA"/>
+                            <constraint firstItem="4yL-tS-Iz2" firstAttribute="leading" secondItem="3" secondAttribute="leading" id="TEs-ZJ-0Mz"/>
+                            <constraint firstItem="4yL-tS-Iz2" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" id="YSY-mx-9Vf"/>
+                            <constraint firstItem="Fwh-sa-3fv" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="160" id="fM3-r3-NmI"/>
+                            <constraint firstItem="Fwh-sa-3fv" firstAttribute="top" secondItem="3" secondAttribute="top" constant="176" id="hB0-i3-KuQ"/>
+                            <constraint firstItem="4yL-tS-Iz2" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" id="iHw-we-IQd"/>
+                            <constraint firstItem="e7l-qb-aqI" firstAttribute="leading" secondItem="3" secondAttribute="leading" id="qNC-Zb-STa"/>
+                            <constraint firstItem="e7l-qb-aqI" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" id="wfx-ii-dp4"/>
+                            <constraint firstItem="Fwh-sa-3fv" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" id="xfY-Mp-kjZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="frontCameraImage" destination="cgx-j3-lad" id="50l-Dm-xfu"/>
+                        <outlet property="frontCameraView" destination="Fwh-sa-3fv" id="Krt-I6-bQV"/>
+                        <outlet property="rearCameraImage" destination="Szg-dB-cao" id="479-Fr-Dux"/>
+                        <outlet property="rearCameraView" destination="e7l-qb-aqI" id="JDv-qI-5QQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="25" y="112"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

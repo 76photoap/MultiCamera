@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>752DD66B-2F5A-4FE8-8804-5187EC607AA5</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MultiCamera</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>22D8B731-F156-4B99-B8E5-D4889B8E863B</key>
+		<string>ssh://bitbucket.org/moriguchi-y/multicamera.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MultiCamera.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>22D8B731-F156-4B99-B8E5-D4889B8E863B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://bitbucket.org/moriguchi-y/multicamera.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>22D8B731-F156-4B99-B8E5-D4889B8E863B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>22D8B731-F156-4B99-B8E5-D4889B8E863B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MultiCamera</string>
+		</dict>
+	</array>
+</dict>
+</plist>
