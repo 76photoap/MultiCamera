@@ -2,8 +2,8 @@
 //  ViewController.h
 //  MultiCamera
 //
-//  Created by Yuya Moriguchi on 2013/07/30.
-//  Copyright (c) 2013年 Yuya Moriguchi. All rights reserved.
+//  Created by laprasDrum on 2013/07/30.
+//  Copyright (c) 2013年 laprasDrum. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
